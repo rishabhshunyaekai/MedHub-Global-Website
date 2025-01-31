@@ -35,56 +35,83 @@
   <!-- preloader -->
 
   <!-- main header -->
-  <header class="main-header style-four">
-    <div class="outer-container">
-      <div class="container">
-        <div class="main-box clearfix">
-          <div class="logo-box pull-left">
-            <figure class="logo">
+    <header class="main-header home-11">
+      <div class="outer-container ">
+          <div class="container d-flex justify-content-end align-items-start">
+              <a href="contact-us.html?contact-form=request-demo" class="request-demo-btn mx-4">Request Demo</a>
+              <div class="dropdown mt-3">
+                  <button class="btn btn-login dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Login <img src="images/dropdown.jpg" style="width: 10px; height: 10px; margin-left: 6px;"/>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                      <button class="dropdown-item" type="button" onclick="window.open('https://medhub.shunyaekai.com/buyer', '_blank')">Login as Buyer</button>
+                      <button class="dropdown-item" type="button" onclick="window.open('https://medhub.shunyaekai.com/supplier', '_blank')">Login as Supplier</button>
+                  </div>
+              </div>
+          </div>
+
+          <div class="container ">
+              <div class="main-box clearfix">
+                  <div class="logo-box pull-left">
+                      <figure class="logo"><a href="index.html"><img style="width: 250px;" src="images/logo.svg"
+                                  alt=""></a></figure>
+                  </div>
+                  <div class="menu-area pull-right clearfix">
+                      <!--Mobile Navigation Toggler-->
+                      <div class="mobile-nav-toggler">
+                          <i class="icon-bar"></i>
+                          <i class="icon-bar"></i>
+                          <i class="icon-bar"></i>
+                      </div>
+                      <nav class="main-menu navbar-expand-md navbar-light">
+                          <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                              <ul class="navigation clearfix">
+                                  <!-- <li class="current dropdown">
+                                      <a href="index.html">Home</a>
+                                  </li> -->
+                                  <li class="dropdown"><a href="about-us.html">About Us</a></li>
+                                  <li><a href="for-buyer.html">For Buyer</a></li>
+                                  <li>
+                                      <a href="for-supplier.html">For Supplier</a>
+                                  </li>
+                                  <li>
+                                      <a href="compare-plans.html">Pricing Plans</a>
+                                  </li>
+                                  <li><a href="contact-us.html">Contact Us</a></li>
+                              </ul>
+                          </div>
+                      </nav>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!--sticky Header-->
+      <div class="sticky-header">
+          <div class="container d-flex justify-content-end align-items-start">
+              <a href="contact-us.html?contact-form=request-demo" class="request-demo-btn mx-4">Request Demo</a>
+              <div class="dropdown mt-3">
+                  <button class="btn btn-login dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Login <img src="images/dropdown.jpg" style="width: 10px; height: 10px; margin-left: 6px;"/>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                      <button class="dropdown-item" type="button" onclick="window.open('https://medhub.shunyaekai.com/buyer', '_blank')">Login as Buyer</button>
+                      <button class="dropdown-item" type="button" onclick="window.open('https://medhub.shunyaekai.com/supplier', '_blank')">Login as Supplier</button>
+                  </div>
+              </div>
+          </div>
+          <div class="container clearfix">
+            <figure class="logo-box">
               <a href="index.html"><img style="width: 240px;" src="images/logo.svg" alt="" /></a>
             </figure>
-          </div>
-          <div class="menu-area pull-right clearfix">
-            <!--Mobile Navigation Toggler-->
-            <div class="mobile-nav-toggler">
-              <i class="icon-bar"></i>
-              <i class="icon-bar"></i>
-              <i class="icon-bar"></i>
+            <div class="menu-area">
+              <nav class="main-menu clearfix">
+                <!--Keep This Empty / Menu will come through Javascript-->
+              </nav>
             </div>
-            <nav class="main-menu navbar-expand-md navbar-light">
-              <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                <ul class="navigation clearfix">
-                  <li>
-                    <a href="index.html">Home</a>
-                  </li>
-                  <li><a href="for-buyer.html">For Buyer</a></li>
-                  <li class="current dropdown">
-                    <a href="for-supplier.html">For Supplier</a>
-                  </li>
-                  <li class="dropdown"><a href="about-us.html">About Us</a></li>
-                  <li><a href="contact-us.html">Contact Us</a></li>
-                </ul>
-              </div>
-            </nav>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!--sticky Header-->
-    <div class="sticky-header">
-      <div class="container clearfix">
-        <figure class="logo-box">
-          <a href="index.html"><img style="width: 240px;" src="images/logo.svg" alt="" /></a>
-        </figure>
-        <div class="menu-area">
-          <nav class="main-menu clearfix">
-            <!--Keep This Empty / Menu will come through Javascript-->
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
+    </header>
   <!-- main-header end -->
 
   <!-- Mobile Menu  -->
@@ -128,7 +155,7 @@
     <div class="container">
       <div class="content-box clearfix">
         <div class="title-box pull-left">
-          <h1>MedHub Global For Sellers</h1>
+          <h1>MedHub Global For Suppliers</h1>
           <p>
             Connect with buyers globally and streamline your sales process.
           </p>
@@ -148,25 +175,21 @@
       <div class="row">
         <div class="col-lg-6 col-md-12 col-sm-12 content-column">
           <div id="content_block_53">
-            <div class="content-box wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
+            <div class="content-box wow" data-wow-delay="00ms" data-wow-duration="1500ms">
               <div class="sec-title">
                 <h2>
-                  Connect with buyers globally and streamline your sales
-                  process.
+                  Connect with Global Buyers and Streamline Your Sales Process
                 </h2>
               </div>
               <div class="text">
                 <p>
-                  MedHub Global is the ultimate platform for healthcare
-                  sellers to connect with verified buyers, optimize sales
-                  processes, and maximize profitability.
+                  MedHub Global is the premier platform for healthcare sellers to connect with verified 
+                  buyers, optimize sales workflows, and boost profitability.
                 </p>
                 <p>
-                  Whether you’re a distributor, manufacturer, or trader, our
-                  AI-powered platform is designed to help you reach new
-                  markets, move inventory faster, and simplify
-                  transactions—all while ensuring compliance with healthcare
-                  procurement standards.
+                  Whether you're a distributor, manufacturer, or trader, our AI-powered platform helps you 
+                  access new markets, accelerate inventory turnover, and simplify transactions while 
+                  ensuring full compliance with healthcare procurement standards.
                 </p>
               </div>
             </div>
@@ -174,8 +197,8 @@
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12 image-column">
           <div id="image_block_47">
-            <div class="image-box js-tilt">
-              <figure class="image wow slideInRight" data-wow-delay="00ms" data-wow-duration="1500ms">
+            <div class="image-box">
+              <figure class="image wow" data-wow-delay="00ms" data-wow-duration="1500ms">
                 <img src="images/Sellers/Connectwithbuyers.jpg" alt="" />
               </figure>
             </div>
@@ -192,8 +215,8 @@
       <div class="row">
         <div class="col-lg-5 col-md-12 col-sm-12 image-column">
           <div id="iamge_block_01">
-            <div class="image-box float-bob-y">
-              <figure class="image wow slideInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
+            <div class="image-box">
+              <figure class="image wow" data-wow-delay="00ms" data-wow-duration="1500ms">
                 <img src="images/Sellers/HowItWorksforSellers.jpg" alt="" />
               </figure>
             </div>
@@ -203,9 +226,9 @@
           <div id="content_block_01">
             <div class="content-box">
               <div class="sec-title">
-                <h2>How It Works for Sellers</h2>
+                <h2>How It Works for Suppliers</h2>
               </div>
-              <div class="inner-box wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+              <div class="inner-box wow" data-wow-delay="00ms" data-wow-duration="1500ms">
                 <div class="row">
                   <div class="col-lg-6 col-md-6 col-sm-12 single-column">
                     <div class="single-item">
@@ -213,50 +236,49 @@
                       <div class="icon-box">
                         <img class="buyer-icon" src="images/Sellers/Variety of Products.svg" alt="" />
                       </div>
-                      <h5><a href="#">Variety of Products</a></h5>
+                      <h5><a href="#">Wide Range of Products</a></h5>
                       <div class="text">
-                        Add fresh products, surplus or refurbished items to
-                        the Marketplace to move idle inventory faster.
+                        List new, surplus, or refurbished items on the marketplace to quickly 
+                        move idle inventory and reach more buyers.
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-12 single-column">
-                    <div class="single-item wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                    <div class="single-item wow" data-wow-delay="300ms" data-wow-duration="1500ms">
                       <div class="bg-layer"></div>
                       <div class="icon-box">
                         <img class="buyer-icon" src="images/Sellers/Negotiate and Close Deals.svg" alt="" />
                       </div>
                       <h5><a href="#">Negotiate and Close Deals</a></h5>
                       <div class="text">
-                        Use our secure platform to communicate with buyers,
-                        negotiate terms, and finalize transactions.
+                        Use our secure platform to connect with buyers, negotiate 
+                        terms, and finalize transactions with confidence.
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-12 single-column">
-                    <div class="single-item wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                    <div class="single-item wow" data-wow-delay="600ms" data-wow-duration="1500ms">
                       <div class="bg-layer"></div>
                       <div class="icon-box">
                         <img class="buyer-icon" src="images/Sellers/noun-products-2804222.svg" alt="" />
                       </div>
                       <h5><a href="#">Select and Manage Logistics</a></h5>
                       <div class="text">
-                        Choose from a range of logistics services directly on
-                        the platform to deliver your products
-                        cost-effectively.
+                        Choose from a variety of logistics services directly on the platform to 
+                        ensure cost-effective and efficient delivery of your products.
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-12 single-column">
-                    <div class="single-item wow fadeInUp" data-wow-delay="900ms" data-wow-duration="1500ms">
+                    <div class="single-item wow" data-wow-delay="900ms" data-wow-duration="1500ms">
                       <div class="bg-layer"></div>
                       <div class="icon-box">
                         <img class="buyer-icon" src="images/Sellers/Ensure Timely Payments.svg" alt="" />
                       </div>
                       <h5><a href="#">Ensure Timely Payments</a></h5>
                       <div class="text">
-                        Invoice factoring lets you get paid instantly by
-                        selling your invoices to vetted financiers.
+                        With invoice factoring, sell your invoices to verified 
+                        financiers and get paid instantly, ensuring smooth cash flow.
                       </div>
                     </div>
                   </div>
@@ -271,12 +293,12 @@
   <!-- feature-section -->
 
   <!-- video-section -->
-  <section class="video-section">
+  <!-- <section class="video-section">
     <div class="video-bg-column" style="background-image: url(images/Sellers/WatchdemoVideoSeller.jpg)"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-12 col-sm-12 video-column">
-          <!-- <div class="video-inner">
+          <div class="video-inner">
               <a
                 href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s"
                 class="lightbox-image"
@@ -285,7 +307,7 @@
                 <i class="flaticon-play-button"></i>
                 <span class="ripple"></span>
               </a>
-            </div> -->
+            </div>
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12 content-column">
           <div id="content_block_04">
@@ -306,7 +328,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- video-section end -->
 
   <!-- subscribe-style-five -->
@@ -316,8 +338,8 @@
         <div class="col-lg-6 col-md-12 col-sm-12 image-column">
           <div id="image_block_38">
             <div class="image-box">
-              <div class="bg-layer" style="background-image: url(images/icons/user-icon.png)"></div>
-              <figure class="image float-bob-y clearfix">
+              <!-- <div class="bg-layer" style="background-image: url(images/icons/user-icon.png)"></div> -->
+              <figure class="image clearfix">
                 <img src="images/Sellers/SellSmarter.jpg" alt="" />
               </figure>
             </div>
@@ -327,11 +349,10 @@
           <div id="content_block_41">
             <div class="content-box">
               <div class="sec-title">
-                <h2>Ready to Sell Smarter with MedHub Global?</h2>
+                <h2>Ready to Sell smarter with Medhub Global</h2>
               </div>
               <div class="text">
-                Join us today to streamline your sales process and connect
-                with a global network of buyers.
+                Join today to optimize your sales process and connect with a global network of verified buyers.
               </div>
               <a href="contact-us.html">
                 <button type="submit" class="theme-btn-two btn interest">
@@ -389,92 +410,93 @@
   <!-- clients-style-four end -->
 
   <!-- main-footer -->
-  <footer class="main-footer style-five style-six">
-    <div class="anim-icons">
-      <div class="icon icon-1">
-        <img src="images/icons/pattern-21.png" alt="" />
-      </div>
-    </div>
-    <div class="image-layer" style="background-image: url(images/icons/footer-bg-6.png)"></div>
+  <footer class="main-footer" style="background-color: #F2F0F9;">
     <div class="container">
-      <div class="footer-top">
-        <div class="widget-section">
-          <div class="row">
-            <div class="col-lg-5 col-md-6 col-sm-12 footer-column">
-              <div class="about-widget footer-widget">
-                <figure class="footer-logo">
-                  <a href="index.html"><img src="images/footer-logo-2.png" alt="" /></a>
-                </figure>
-                <div class="text">
-                  MedHub Global is a trading name of One Vision Technologies Ltd. All rights reserved.
+        <div class="footer-top">
+            <div class="widget-section">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
+                        <div class="about-widget footer-widget">
+                            <figure class="footer-logo"><a href="index.html"><img style="width: 200px;"
+                                        src="images/navibluelogo.svg" alt=""></a></figure>
+                            <div class="text">MedHub Global is a trading name of One Vision Technologies Ltd. All rights reserved.
+                            </div>
+                            <ul class="social-links">
+                                <li>
+                                    <h6>Follow Us :</h6>
+                                </li>
+                                <li><a href="https://www.facebook.com/people/MedHub-Global/61570166584714/"><i
+                                            class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://x.com/medhubglobal"><i class="fab fa-twitter"></i></a></li>
+                                <!-- <li><a href="#"><i class="fab fa-skype"></i></a></li> -->
+                                <li><a href="https://www.linkedin.com/company/medhub-global"><i
+                                            class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
+                        <div class="links-widget footer-widget">
+                            <h4 class="widget-title">Quick Links</h4>
+                            <div class="widget-content">
+                                <ul class="list clearfix">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="for-buyer.html">For Buyer</a></li>
+                                    <li><a href="for-supplier.html">For Supplier</a></li>
+                                    <li><a href="compare-plans.html">Pricing Plans</a></li>
+                                    <li><a href="contact-us.html?contact-form=request-demo">Request a Demo</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                        <div class="links-widget footer-widget">
+                            <h4 class="widget-title">Support</h4>
+                            <div class="widget-content">
+                                <ul class="list clearfix">
+                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="contact-us.html">Contact Us</a></li>
+                                    <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                        <div class="contact-widget footer-widget">
+                            <h4 class="widget-title">Contact Us</h4>
+                            <div class="widget-content">
+                                <ul class="list clearfix">
+                                    <li ><i class="fas fa-map-marker-alt"></i>Regus, 3rd floor, News Building, 3 London Bridge Street, London
+                                        SE1 9SG, United Kingdom
+                                        
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-phone-volume"></i>
+                                        <a href="contact-us.html">  Request Call Back</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-envelope"></i>
+                                        <a href="mailto:connect@medhub.global">connect@medhub.global</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
-              <div class="links-widget footer-widget">
-                <h4 class="widget-title">Quick Links</h4>
-                <div class="widget-content">
-                  <ul class="list clearfix">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
-                    <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
-                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
-              <div class="contact-widget footer-widget" style="margin-bottom: 20px;">
-                <h4 class="widget-title">Contact Us</h4>
-                <div class="widget-content">
-                  <ul class="contact-info clearfix">
-                    <li>
-                      <i class="fas fa-map-marker-alt"></i>Regus, 3rd floor, News Building, 3 London Bridge Street,
-                      London
-                      SE1 9SG, United Kingdom
-
-                    </li>
-                    <li>
-                      <a href="contact-us.html">
-                        <i class="fas fa-phone"></i>
-                        Request Call Back
-                      </a>
-                    </li>
-                    <li>
-                      <i class="fas fa-envelope"></i> <a href="mailto:connect@medhub.global">connect@medhub.global</a>
-                    </li>
-                  </ul>
-                </div>
-                <ul class="social-links clearfix">
-                  <li>
-                    <a href="https://www.facebook.com/people/MedHub-Global/61570166584714/"><i
-                        class="fab fa-facebook-f"></i></a>
-                  </li>
-                  <li>
-                    <a href="https://x.com/medhubglobal"><i class="fab fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <!-- <a href="#"><i class="fab fa-skype"></i></a> -->
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/company/medhub-global"><i class="fab fa-linkedin-in"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <div class="copyright">
-      &copy; 2024 <a href="#">medhubglobal.com</a>. All rights reserved
+        <div class="footer-bottom">
+            <div class="copyright">
+               &copy; 2025 <a href="#">medhubglobal.com</a>. All rights reserved
+            </div>
+               
+        </div>
     </div>
   </footer>
-  <!-- main-footer end -->
+<!-- main-footer end -->
 
   <!-- sidebar cart item -->
-  <div class="xs-sidebar-group info-group info-sidebar">
+  <!-- <div class="xs-sidebar-group info-group info-sidebar">
     <div class="xs-overlay xs-bg-black"></div>
     <div class="xs-sidebar-widget">
       <div class="sidebar-widget-container">
@@ -482,7 +504,7 @@
           <a href="#" class="close-side-widget"> X </a>
         </div>
         <div class="sidebar-textwidget">
-          <!-- Sidebar Info Content -->
+
           <div class="sidebar-info-contents">
             <div class="content-inner">
               <div class="logo">
@@ -507,7 +529,7 @@
                   </li>
                 </ul>
               </div>
-              <!-- Social Box -->
+               
               <ul class="social-links clearfix">
                 <li>
                   <a href="https://www.facebook.com/people/MedHub-Global/61570166584714/"><i
@@ -528,13 +550,13 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- END sidebar widget item -->
 
   <!--Scroll to top-->
-  <button class="scroll-top scroll-to-target" data-target="html">
+  <!-- <button class="scroll-top scroll-to-target" data-target="html">
     <span class="fa fa-arrow-up"></span>
-  </button>
+  </button> -->
 
   <!-- jequery plugins -->
   <script src="js/jquery.js"></script>

@@ -33,56 +33,83 @@
   <!-- preloader -->
 
   <!-- main header -->
-  <header class="main-header style-four">
-    <div class="outer-container">
-      <div class="container">
-        <div class="main-box clearfix">
-          <div class="logo-box pull-left">
-            <figure class="logo">
+    <header class="main-header home-11">
+      <div class="outer-container ">
+          <div class="container d-flex justify-content-end align-items-start">
+              <a href="contact-us.html?contact-form=request-demo" class="request-demo-btn mx-4">Request Demo</a>
+              <div class="dropdown mt-3">
+                  <button class="btn btn-login dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Login <img src="images/dropdown.jpg" style="width: 10px; height: 10px; margin-left: 6px;"/>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                      <button class="dropdown-item" type="button" onclick="window.open('https://medhub.shunyaekai.com/buyer', '_blank')">Login as Buyer</button>
+                      <button class="dropdown-item" type="button" onclick="window.open('https://medhub.shunyaekai.com/supplier', '_blank')">Login as Supplier</button>
+                  </div>
+              </div>
+          </div>
+
+          <div class="container ">
+              <div class="main-box clearfix">
+                  <div class="logo-box pull-left">
+                      <figure class="logo"><a href="index.html"><img style="width: 250px;" src="images/logo.svg"
+                                  alt=""></a></figure>
+                  </div>
+                  <div class="menu-area pull-right clearfix">
+                      <!--Mobile Navigation Toggler-->
+                      <div class="mobile-nav-toggler">
+                          <i class="icon-bar"></i>
+                          <i class="icon-bar"></i>
+                          <i class="icon-bar"></i>
+                      </div>
+                      <nav class="main-menu navbar-expand-md navbar-light">
+                          <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                              <ul class="navigation clearfix">
+                                  <!-- <li class="current dropdown">
+                                      <a href="index.html">Home</a>
+                                  </li> -->
+                                  <li class="dropdown"><a href="about-us.html">About Us</a></li>
+                                  <li><a href="for-buyer.html">For Buyer</a></li>
+                                  <li>
+                                      <a href="for-supplier.html">For Supplier</a>
+                                  </li>
+                                  <li>
+                                      <a href="compare-plans.html">Pricing Plans</a>
+                                  </li>
+                                  <li><a href="contact-us.html">Contact Us</a></li>
+                              </ul>
+                          </div>
+                      </nav>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!--sticky Header-->
+      <div class="sticky-header">
+          <div class="container d-flex justify-content-end align-items-start">
+              <a href="contact-us.html?contact-form=request-demo" class="request-demo-btn mx-4">Request Demo</a>
+              <div class="dropdown mt-3">
+                  <button class="btn btn-login dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Login <img src="images/dropdown.jpg" style="width: 10px; height: 10px; margin-left: 6px;"/>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                      <button class="dropdown-item" type="button" onclick="window.open('https://medhub.shunyaekai.com/buyer', '_blank')">Login as Buyer</button>
+                      <button class="dropdown-item" type="button" onclick="window.open('https://medhub.shunyaekai.com/supplier', '_blank')">Login as Supplier</button>
+                  </div>
+              </div>
+          </div>
+          <div class="container clearfix">
+            <figure class="logo-box">
               <a href="index.html"><img style="width: 240px;" src="images/logo.svg" alt="" /></a>
             </figure>
-          </div>
-          <div class="menu-area pull-right clearfix">
-            <!--Mobile Navigation Toggler-->
-            <div class="mobile-nav-toggler">
-              <i class="icon-bar"></i>
-              <i class="icon-bar"></i>
-              <i class="icon-bar"></i>
+            <div class="menu-area">
+              <nav class="main-menu clearfix">
+                <!--Keep This Empty / Menu will come through Javascript-->
+              </nav>
             </div>
-            <nav class="main-menu navbar-expand-md navbar-light">
-              <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                <ul class="navigation clearfix">
-                  <li>
-                    <a href="index.html">Home</a>
-                  </li>
-                  <li><a href="for-buyer.html">For Buyer</a></li>
-                  <li>
-                    <a href="for-supplier.html">For Supplier</a>
-                  </li>
-                  <li class="dropdown"><a href="about-us.html">About Us</a></li>
-                  <li class="current dropdown"><a href="contact-us.html">Contact Us</a></li>
-                </ul>
-              </div>
-            </nav>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!--sticky Header-->
-    <div class="sticky-header">
-      <div class="container clearfix">
-        <figure class="logo-box">
-          <a href="index.html"><img style="width: 240px;" src="images/logo.svg" alt="" /></a>
-        </figure>
-        <div class="menu-area">
-          <nav class="main-menu clearfix">
-            <!--Keep This Empty / Menu will come through Javascript-->
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
+    </header>
   <!-- main-header end -->
 
   <!-- Mobile Menu  -->
@@ -125,9 +152,9 @@
     </div>
     <div class="container">
       <div class="content-box clearfix">
-        <div class="title-box pull-left">
+        <div class="title-box pull-left mt-5">
           <h1>Contact Us</h1>
-          <p>Reach out to us.</p>
+          <!-- <p>Reach out to us.</p> -->
         </div>
         <!-- <ul class="bread-crumb pull-right">
             <li>Contact Us</li>
@@ -139,11 +166,11 @@
   <!-- page-title end -->
 
   <!-- contact-section -->
-  <section class="contact-section">
+  <section class="contact-section" id="form-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-10 col-md-12 col-sm-12 offset-lg-1 big-column">
-          <div class="info-content centred">
+          <!-- <div class="info-content centred">
             <div class="row">
               <div class="col-lg-4 col-md-6 col-sm-12 info-column">
                 <div class="single-info-box">
@@ -151,11 +178,11 @@
                     <img style="width: 60px;" src="images/phone.svg" alt="" />
                   </figure>
                   <h2>Phone</h2>
-                  <!-- <div class="form-group message-btn centred">
+                  <div class="form-group message-btn centred">
                     <button class="theme-btn-two btn" onclick="sendWhatsAppMessage()">
                       Request Call Back
                     </button>
-                  </div> -->
+                  </div>
                   <div class="phone">
                     <a href="#contact-us">Request Call Back</a>
                   </div>
@@ -186,7 +213,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <div class="contact-form-area" id="contact-us">
             <div class="sec-title center">
@@ -226,7 +253,8 @@
                           <option value="request-demo">Request Demo</option>
                          
                           <option value="general-enquiry">General Enquiry</option>
-                          <option value="career-interest">Career Interest</option>
+                          <!-- <option value="career-interest">Career Interest</option> -->
+                          <option value="partner-with-us">Partner with us</option>
                           <option value="investor-relations">Investor Relations</option>
                         </select>
                       </div>
@@ -242,7 +270,7 @@
                  
                   <div class="col-lg-12 col-md-12 col-sm-12 column">
                     <div class="form-group">
-                      <textarea name="message" placeholder="Write here message"></textarea>
+                      <textarea name="message" placeholder="Write your message here"></textarea>
                     </div>
                   </div>
                   <div class="col-lg-12 col-md-12 col-sm-12 column">
@@ -284,101 +312,98 @@
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </section>
-
-
-
   <!-- map-section end -->
 
   <!-- main-footer -->
-  <footer class="main-footer style-five style-six">
-    <div class="anim-icons">
-      <div class="icon icon-1">
-        <img src="images/icons/pattern-21.png" alt="" />
-      </div>
-    </div>
-    <div class="image-layer" style="background-image: url(images/icons/footer-bg-6.png)"></div>
+  <footer class="main-footer" style="background-color: #F2F0F9;">
     <div class="container">
-      <div class="footer-top">
-        <div class="widget-section">
-          <div class="row">
-            <div class="col-lg-5 col-md-6 col-sm-12 footer-column">
-              <div class="about-widget footer-widget">
-                <figure class="footer-logo">
-                  <a href="index.html"><img src="images/footer-logo-2.png" alt="" /></a>
-                </figure>
-                <div class="text">
-                  MedHub Global is a trading name of One Vision Technologies Ltd. All rights reserved.
-
+        <div class="footer-top">
+            <div class="widget-section">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
+                        <div class="about-widget footer-widget">
+                            <figure class="footer-logo"><a href="index.html"><img style="width: 200px;"
+                                        src="images/navibluelogo.svg" alt=""></a></figure>
+                            <div class="text">MedHub Global is a trading name of One Vision Technologies Ltd. All rights reserved.
+                            </div>
+                            <ul class="social-links">
+                                <li>
+                                    <h6>Follow Us :</h6>
+                                </li>
+                                <li><a href="https://www.facebook.com/people/MedHub-Global/61570166584714/"><i
+                                            class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://x.com/medhubglobal"><i class="fab fa-twitter"></i></a></li>
+                                <!-- <li><a href="#"><i class="fab fa-skype"></i></a></li> -->
+                                <li><a href="https://www.linkedin.com/company/medhub-global"><i
+                                            class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
+                        <div class="links-widget footer-widget">
+                            <h4 class="widget-title">Quick Links</h4>
+                            <div class="widget-content">
+                                <ul class="list clearfix">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="for-buyer.html">For Buyer</a></li>
+                                    <li><a href="for-supplier.html">For Supplier</a></li>
+                                    <li><a href="compare-plans.html">Pricing Plans</a></li>
+                                    <li><a href="contact-us.html?contact-form=request-demo">Request a Demo</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                        <div class="links-widget footer-widget">
+                            <h4 class="widget-title">Support</h4>
+                            <div class="widget-content">
+                                <ul class="list clearfix">
+                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="contact-us.html">Contact Us</a></li>
+                                    <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                        <div class="contact-widget footer-widget">
+                            <h4 class="widget-title">Contact Us</h4>
+                            <div class="widget-content">
+                                <ul class="list clearfix">
+                                    <li ><i class="fas fa-map-marker-alt"></i>Regus, 3rd floor, News Building, 3 London Bridge Street, London
+                                        SE1 9SG, United Kingdom
+                                        
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-phone-volume"></i>
+                                        <a href="contact-us.html">  Request Call Back</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-envelope"></i>
+                                        <a href="mailto:connect@medhub.global">connect@medhub.global</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
-              <div class="links-widget footer-widget">
-                <h4 class="widget-title">Quick Links</h4>
-                <div class="widget-content">
-                  <ul class="list clearfix">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
-                    <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
-                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
-              <div class="contact-widget footer-widget" style="margin-bottom: 20px;">
-                <h4 class="widget-title">Contact Us</h4>
-                <div class="widget-content">
-                  <ul class="contact-info clearfix">
-                    <li>
-                      <i class="fas fa-map-marker-alt"></i>Regus, 3rd floor, News Building, 3 London Bridge Street,
-                      London
-                      SE1 9SG, United Kingdom
-
-                    </li>
-                    <li>
-                      <a href="#contact-us">
-                        <i class="fas fa-phone"></i>
-                        Request Call Back
-                      </a>
-                    </li>
-                    <li>
-                      <i class="fas fa-envelope"></i> <a href="mailto:connect@medhub.global">connect@medhub.global</a>
-                    </li>
-
-                  </ul>
-                </div>
-                <ul class="social-links clearfix">
-                  <li>
-                    <a href="https://www.facebook.com/people/MedHub-Global/61570166584714/"><i
-                        class="fab fa-facebook-f"></i></a>
-                  </li>
-                  <li>
-                    <a href="https://x.com/medhubglobal"><i class="fab fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <!-- <a href="#"><i class="fab fa-skype"></i></a> -->
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/company/medhub-global"><i class="fab fa-linkedin-in"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <div class="copyright">
-      &copy; 2024 <a href="#">medhubglobal.com</a>. All rights reserved
+        <div class="footer-bottom">
+            <div class="copyright">
+               &copy; 2025 <a href="#">medhubglobal.com</a>. All rights reserved
+            </div>
+               
+        </div>
     </div>
   </footer>
   <!-- main-footer end -->
+
   <!--Scroll to top-->
-  <button class="scroll-top scroll-to-target" data-target="html">
+  <!-- <button class="scroll-top scroll-to-target" data-target="html">
     <span class="fa fa-arrow-up"></span>
-  </button>
+  </button> -->
 
   <!-- jequery plugins -->
   <script src="js/jquery.js"></script>
@@ -491,6 +516,25 @@
           }
         }
       });
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const urlParams = new URLSearchParams(window.location.search);
+      const requestDemo = urlParams.get("contact-form");
+      const formSection = document.getElementById("contact-us");
+      const dropdown = document.getElementById("customDropdown");
+      
+      if (requestDemo === "request-demo") {
+        dropdown.value = "request-demo";
+          window.location.href = '#form-section';
+        // if(window.location.href.includes(requestDemo))
+        // {
+        //     $(document).scrollTop(700);
+        // }
+      } else {
+        requestDemo.value = "";
+      }
     });
   </script>
 </body>
